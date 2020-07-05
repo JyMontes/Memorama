@@ -1,4 +1,4 @@
-// Escribimos los niveles dinámicamente
+// Escribimos los niveles 
 escribeNiveles();
 
 // Asignamos eventos iniciales

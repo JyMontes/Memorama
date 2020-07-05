@@ -1,5 +1,5 @@
 function iniciaCronometro() {
-  var segundos = 10;
+  var segundos = niveles[nivelActual].tiempo;
   var minutos = 0;
   var segundosTexto;
   var minutosTexto;
