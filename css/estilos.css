@@ -1,4 +1,21 @@
+:root {
+  --bg: #fafafa;
+  --font: "Archivo", sans-serif;
+  --font-display: "Archivo Narrow", sans-serif;
+  --purple: #4a148c;
+  --pink: #d81b60;
+  --gradient: linear-gradient(50deg,var(--pink), var(--purple));
+}
+
+*{
+  box-sizing: border-box;
+}
+
 body {
+  margin: auto;
+  min-height: 100vh;
+  background: var(--bg);
+  font-family: var(--font);
   font-size: 2rem;
   display: flex;
   flex-direction: column;
@@ -62,7 +79,7 @@ body {
 
 .cabecera-num {
   font-family: var(--font-display);
-  color: var(--hotpink);
+  color: var(--purple);
   font-weight: 400;
   font-size: 3.5rem;
   line-height: 0.9;
@@ -132,26 +149,6 @@ main {
   transform: rotateY(-180deg);
 }
 
-@keyframes error {
-  10%,
-  90% {
-    transform: rotateY(-180deg) translateX(-1px);
-  }
-  20%,
-  80% {
-    transform: rotateY(-180deg) translateX(2px);
-  }
-  30%,
-  50%,
-  70% {
-    transform: rotateY(-180deg) translateX(-4px);
-  }
-  40%,
-  60% {
-    transform: rotateY(-180deg) translateX(4px);
-  }
-}
-
 @keyframes acierto {
   from {
     transform: rotateY(-180deg) scale3d(1, 1, 1);
@@ -213,7 +210,7 @@ main {
 }
 
 .modal h2 {
-  color: var(--orange);
+  color: var(--pink);
   font-family: var(--font-display);
   margin: 0;
 }
@@ -248,7 +245,7 @@ button:focus {
 }
 
 .modal .reiniciar {
-  color: var(--hotpink);
+  color: var(--purple);
   background: transparent;
   border: 0;
   text-transform: capitalize;
@@ -277,7 +274,7 @@ button:focus {
   line-height: .68rem;
   display: flex;
   justify-content: center;
-  background: var(--hotpink);
+  background: var(--purple);
 }
 
 .control-oculto{
@@ -285,7 +282,7 @@ button:focus {
 }
 
 .selecciona-nivel{
-  background-color: var(--hotpink);
+  background-color: var(--purple);
   position: fixed;
   width: 250px;
   right: 0;
